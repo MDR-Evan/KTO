@@ -1,0 +1,54 @@
+{
+  "metrics": {
+    "MAE": 0.2854681152184534,
+    "RMSE": 0.5951596029720555,
+    "R2": 0.9950339176674589,
+    "train_rows": 304,
+    "test_rows": 77,
+    "feature_count": 30
+  },
+  "weights": {
+    "nav_score": 0.3,
+    "type_quality_score": 0.2,
+    "type_top1_prob": 0.15,
+    "info_score": 0.1,
+    "recent_score": 0.1,
+    "regional_demand_score": 0.15
+  },
+  "numeric_features": [
+    "info_score",
+    "recent_score",
+    "nav_score",
+    "type_quality_score",
+    "type_top1_prob",
+    "regional_demand_score",
+    "avg_monthly_visitors",
+    "avg_visitor_growth_rate",
+    "avg_stay_time",
+    "avg_overnight_days",
+    "avg_overnight_ratio",
+    "avg_tourism_spending_outsider",
+    "avg_local_currency_spending",
+    "mapx",
+    "mapy",
+    "has_image",
+    "has_tel",
+    "has_addr",
+    "type_prob_관광지",
+    "type_prob_레저스포츠",
+    "type_prob_문화관광",
+    "type_prob_쇼핑",
+    "type_prob_숙박",
+    "type_prob_역사관광",
+    "type_prob_음식",
+    "type_prob_자연관광",
+    "type_prob_체험관광"
+  ],
+  "categorical_features": [
+    "content_type_name",
+    "target_tourism_type",
+    "type_top1"
+  ],
+  "target": "recommend_score",
+  "note": "recommend_score는 실제 사용자 평점이 아니라 공공데이터 기반 의사 라벨입니다. 중심지 거리 변수는 제외했습니다."
+}
